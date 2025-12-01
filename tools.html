@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tools | BuildFlow</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="site-header">
+            <div class="logo-block">
+                <div class="logo-monogram">BF</div>
+                <div class="logo-text">BuildFlow</div>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="toolkits.html" class="nav-link">Toolkits</a>
+                <a href="tools.html" class="nav-link active">Tools</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="login.html" class="nav-link">Login</a>
+                
+            </nav>
+        </header>
+        
+<main class="page-main">
+    <section class="page-hero">
+        <h1>Tools</h1>
+        <p>Simple calculators and helpers to take the guesswork out of everyday business decisions.</p>
+    </section>
+
+    <section class="section" id="pricing">
+        <h2>Pricing calculator</h2>
+        <p class="section-intro">
+            Estimate a sustainable price for your product or service based on your time, costs, and desired profit margin.
+        </p>
+        <div class="tool-panel">
+            <div class="tool-form">
+                <label>
+                    Your hourly rate
+                    <input type="number" id="pc-hourly-rate" placeholder="e.g. 50" />
+                </label>
+                <label>
+                    Hours per project / order
+                    <input type="number" id="pc-hours" placeholder="e.g. 3" />
+                </label>
+                <label>
+                    Fixed costs per project / order
+                    <input type="number" id="pc-costs" placeholder="e.g. 25" />
+                </label>
+                <label>
+                    Desired profit margin (%)
+                    <input type="number" id="pc-margin" placeholder="e.g. 30" />
+                </label>
+                <button class="btn primary" id="pc-calc-btn">Calculate price</button>
+            </div>
+            <div class="tool-result">
+                <p class="muted">Suggested price</p>
+                <p class="result-value" id="pc-result">—</p>
+                <p class="muted small">
+                    This is a simple guide, not financial advice. Adjust based on your market, positioning, and demand.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="name-generator">
+        <h2>Business name idea helper</h2>
+        <p class="section-intro">
+            Combine keywords to spark simple, brandable name ideas. Use as a starting point and refine until it feels right.
+        </p>
+        <div class="tool-panel">
+            <div class="tool-form">
+                <label>
+                    Main keyword
+                    <input type="text" id="ng-keyword-main" placeholder="e.g. studio, market, flows" />
+                </label>
+                <label>
+                    Supporting keyword
+                    <input type="text" id="ng-keyword-support" placeholder="e.g. bloom, north, craft" />
+                </label>
+                <button class="btn primary" id="ng-generate-btn">Generate ideas</button>
+            </div>
+            <div class="tool-result">
+                <p class="muted">Name ideas</p>
+                <ul id="ng-results" class="idea-list"></ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+        <footer class="site-footer">
+            <p>© <span id="year"></span> BuildFlow. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

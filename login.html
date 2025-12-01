@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | BuildFlow</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="site-header">
+            <div class="logo-block">
+                <div class="logo-monogram">BF</div>
+                <div class="logo-text">BuildFlow</div>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="toolkits.html" class="nav-link">Toolkits</a>
+                <a href="tools.html" class="nav-link">Tools</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="login.html" class="nav-link active">Login</a>
+                
+            </nav>
+        </header>
+        
+<main class="page-main">
+    <section class="page-hero">
+        <h1>Login</h1>
+        <p>Member access to your downloads and tools (coming soon).</p>
+    </section>
+
+    <section class="section section-narrow">
+        <div class="info-card">
+            <p>
+                In the first version of BuildFlow, toolkits are delivered as direct downloads.
+                A full member dashboard with login will be added as the library grows.
+            </p>
+            <p class="muted small">
+                You can still deploy this page and connect it to an authentication system (e.g. Supabase, Auth0, or a course platform) later
+                without changing the rest of the site.
+            </p>
+        </div>
+    </section>
+</main>
+
+        <footer class="site-footer">
+            <p>© <span id="year"></span> BuildFlow. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
